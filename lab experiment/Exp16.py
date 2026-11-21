@@ -1,7 +1,6 @@
 import numpy as np
 
 def fspl_db(d_km, f_mhz):
-    """Free-space path loss in dB (d in km, f in MHz)."""
     return 20*np.log10(d_km) + 20*np.log10(f_mhz) + 32.44
 
 Pt_dbm, Gt_db, Gr_db = 43.0, 15.0, 0.0      # BS power, BS gain, MS gain
