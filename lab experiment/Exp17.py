@@ -4,7 +4,6 @@ S = 420
 M = 10
 n = 4
 valid = sorted({i*i + i*j + j*j for i in range(0, 5) for j in range(0, 5)} - {0})[:8]
-
 print(f"{'N':>3}{'D/R':>8}{'ch/cell':>9}{'Capacity C':>12}{'S/I (dB)':>10}")
 for N in valid:
     Q = math.sqrt(3*N)
