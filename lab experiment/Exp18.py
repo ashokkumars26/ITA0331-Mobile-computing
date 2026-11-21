@@ -3,7 +3,6 @@ def erlang_b(E, m):
     for k in range(1, m + 1):
         B = (E * B) / (k + E * B)
     return B
-
 loads = [2, 5, 10, 20]
 channels = [5, 10, 15, 20, 25, 30]
 print("Blocking probability (%)")
